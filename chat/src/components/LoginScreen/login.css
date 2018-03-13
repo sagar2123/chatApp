@@ -1,0 +1,15 @@
+.inputForMessage{
+    width: 92%;
+    height: 30px;
+}
+.sendButton{
+    width: 6%;
+    margin-left: 1%;
+    height: 32px;
+}
+.inputContainer{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    left: 0.3%;
+}
