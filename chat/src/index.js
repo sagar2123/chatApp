@@ -14,6 +14,20 @@ class Name extends React.Component{
 
     onLogin(){
       this.setState({showComponent: !this.state.showComponent});
+      createBlogPost("Sagar");
+    }
+
+    createBlogPost(data) {
+        return fetch('', {
+            method: 'POST',
+            mode: 'CORS',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(res => {
+            return res;
+        }).catch(err => err);
     }
 
     handleInputChange(newPartialInput) {
