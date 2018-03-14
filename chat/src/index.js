@@ -12,15 +12,10 @@ class Name extends React.Component{
         this.handleInputChange = this.handleInputChange.bind(this);
     }
 
-    onLogin(){
-      this.setState({showComponent: !this.state.showComponent});
-      createBlogPost("Sagar");
-    }
-
     createBlogPost(data) {
-        return fetch('', {
+        return fetch('http://localhost:5000/name', {
             method: 'POST',
-            mode: 'CORS',
+            mode: 'no-cors',
             body: JSON.stringify(data),
             headers: {
                 'Content-Type': 'application/json'
@@ -29,6 +24,12 @@ class Name extends React.Component{
             return res;
         }).catch(err => err);
     }
+
+    onLogin(){
+      this.setState({showComponent: !this.state.showComponent});
+      console.log(this.createBlogPost({"Sagar":"bhatia"}));
+    }
+
 
     handleInputChange(newPartialInput) {
         this.setState({value: newPartialInput})

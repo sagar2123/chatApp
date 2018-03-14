@@ -19,7 +19,6 @@ app.get('/', function(req, res){
   app.post('/name', function(req, res){
       var body = res.body;
       console.log(req.body);
-      res.send("sagar");
   });
 
 io.on('connection', function(socket){
