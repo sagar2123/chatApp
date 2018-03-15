@@ -1,15 +1,43 @@
 .inputForMessage{
     width: 92%;
-    height: 30px;
+    height: 4vh;
+    position: relative;
+    bottom: 2px;
+
 }
 .sendButton{
-    width: 6%;
-    margin-left: 1%;
-    height: 32px;
+    width: 7.5%;
+    border-radius: 5px;
+    height: 4.5vh;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: 2px solid black;
 }
 .inputContainer{
-    position: fixed;
-    bottom: 10px;
+    position: relative;
+    width: 92%;
+    top: 6%;
+    border-radius: 5px;
+    left: 4%;
+    background-color: #6a7e8e;
+}
+.chatContainer{
     width: 100%;
-    left: 0.3%;
+    height: 97vh;
+    background-color: #6a7e8e;
+}
+.chatMessageCotainer{
+    position: relative;
+    height: 88%;
+    padding: -4%;
+    border-radius: 5px;
+    top: 5%;
+    width: 92%;
+    left: 4%;
+    background-color: white;
+}
+.messageContainerUl{
+    padding: 5px;
 }

@@ -25,6 +25,10 @@ io.on('connection', function(socket){
     socket.on('chat message', function(msg){
       io.emit('chat message', msg);
     });
+
+    socket.on('newUserAdded', function(msg){
+      io.emit('newUserAdded', msg);
+    });
   });
 
 io.on('connection', function(socket){

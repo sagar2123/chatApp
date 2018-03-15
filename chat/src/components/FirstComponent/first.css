@@ -1,0 +1,33 @@
+.loginContainer{
+    width: 50%;
+    left: 25%;
+    background-color: #6a7e8e;
+        top: 225px;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px 0px 50px 0px;
+}
+.nameInput {
+    width: 80%;
+    left: 10%;
+    position: relative;
+    height: 40px;
+    border-radius: 5px;
+}
+.submitButton{
+    width: 80%;
+    left: 10.5%;
+    position: relative;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+.heading{
+    width: 80%;
+    left: 10%;
+    position: relative;
+    text-align: center
+}
