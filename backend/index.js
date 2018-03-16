@@ -27,7 +27,15 @@ io.on('connection', function(socket){
     });
 
     socket.on('newUserAdded', function(msg){
-      io.emit('newUserAdded', msg);
+      socket.broadcast.emit('newUserAdded', msg);
+    });
+
+    socket.on('Typing', function(msg){
+      socket.broadcast.emit('Typing', msg);
+    });
+
+    socket.on('stopTyping', function(){
+      socket.broadcast.emit('stopTyping');
     });
   });
 
@@ -36,5 +44,5 @@ io.on('connection', function(socket){
 });
 
 server.listen(5000, function(){
-  console.log('listening on *:3000');
+  console.log('listening on *:5000');
 });
